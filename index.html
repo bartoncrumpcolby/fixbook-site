@@ -3,120 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fixbook | Maintenance for restaurants, bars and hotels</title>
-<meta name="description" content="Planned servicing and reactive jobs for every site, in one place. Staff report it from their phone, your maintenance team books it in, and it stays on the board until it is done.">
+<title>Fixbook | Sign in</title>
+<meta name="description" content="Fixbook: maintenance for restaurants, bars and hotels. Sign in to your account.">
 <link rel="canonical" href="https://getfixbook.com/">
 <meta property="og:title" content="Fixbook | Nothing gets missed">
-<meta property="og:description" content="Planned servicing and reactive jobs for every site, in one place.">
+<meta property="og:description" content="Maintenance for restaurants, bars and hotels.">
 <meta property="og:url" content="https://getfixbook.com/">
-<meta property="og:type" content="website">
 <meta property="og:image" content="https://getfixbook.com/img/og.png">
 <meta name="theme-color" content="#16233B">
 <link rel="icon" href="/img/mark.svg" type="image/svg+xml">
 <link rel="icon" href="/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="preload" href="/fonts/schibstedgrotesk-normal-400-900-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<style>
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:#16233B;color:#FBFAF5;font-family:'Schibsted Grotesk','Helvetica Neue',Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;display:flex;flex-direction:column;min-height:100dvh}
+main{flex:1;display:grid;place-items:center;padding:40px 24px}
+.box{width:100%;max-width:400px;text-align:center}
+.mark{display:inline-flex;align-items:center;gap:12px;font-weight:800;font-size:28px;letter-spacing:-.035em;color:#FBFAF5;text-decoration:none}
+.mark svg{border-radius:12px}
+h1{margin:36px 0 12px;font-size:clamp(34px,8vw,46px);font-weight:800;letter-spacing:-.045em;line-height:1}
+h1 span{color:#8FB0EA}
+p{margin:0;color:rgba(246,244,236,.68);font-size:17px;line-height:1.5}
+.go{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:56px;margin-top:36px;border-radius:14px;
+  background:#F3EFE2;color:#16233B;font-weight:700;font-size:17px;text-decoration:none;transition:background .15s ease,transform .15s ease}
+.go:hover{background:#fff}
+.go:active{transform:scale(.985)}
+.go:focus-visible{outline:3px solid #8FB0EA;outline-offset:3px}
+.help{margin-top:18px;font-size:14.5px;color:rgba(246,244,236,.55)}
+.help a{color:#8FB0EA;text-decoration:none;font-weight:600}
+.help a:hover{color:#C3D4F4}
+footer{padding:22px 24px 28px;text-align:center;font-size:12.5px;line-height:1.6;color:rgba(246,244,236,.42)}
+footer nav{display:flex;justify-content:center;gap:4px 18px;flex-wrap:wrap;margin-bottom:8px}
+footer a{color:rgba(246,244,236,.62);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+footer a:hover{color:#FBFAF5}
+.rise{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}}
+@media (prefers-reduced-motion:reduce){.rise{animation:none}}
+</style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-
-<header class="top" id="top">
-  <div class="wrap">
-    <a class="brand" href="/" aria-label="Fixbook home"><img src="/img/mark.svg" alt="" width="30" height="30">Fixbook</a>
-    <div class="right">
-      <a class="signin" href="mailto:colby@getfixbook.com">Contact</a>
-      <a class="btn primary" href="https://app.getfixbook.com/login">Sign in</a>
-    </div>
+<main>
+  <div class="box rise">
+    <a class="mark" href="/" aria-label="Fixbook"><svg width="44" height="44" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="116" fill="#16233B"/><rect x="186" y="84" width="140" height="344" rx="70" fill="#F3EFE2"/><circle cx="256" cy="160" r="42" fill="#E0533F"/><circle cx="256" cy="256" r="42" fill="#E8A13A"/><circle cx="256" cy="352" r="42" fill="#1FA468"/></svg> Fixbook</a>
+    <h1>Nothing gets <span>missed.</span></h1>
+    <p>Maintenance for restaurants, bars and hotels.</p>
+    <a class="go" href="https://app.getfixbook.com/login">Sign in <span aria-hidden="true">&rarr;</span></a>
+    <p class="help">Need access? <a href="mailto:hello@getfixbook.com?subject=Fixbook">Get in touch</a></p>
   </div>
-</header>
-
-<main id="main">
-
-<!-- ============================================================ hero -->
-<section class="hero">
-  <div class="wrap">
-    <div>
-      <p class="eyebrow rise d1">Maintenance for restaurants, bars and hotels</p>
-      <h1 class="rise d2">Nothing gets <span class="soft">missed.</span></h1>
-      <p class="lede rise d3">Planned servicing and reactive jobs for every site, in one place. Report it from your phone, see who is coming and when, and know when it is done.</p>
-      <div class="ctas rise d4">
-        <a class="btn primary" href="https://app.getfixbook.com/login">Sign in <span class="arr" aria-hidden="true">&rarr;</span></a>
-        <a class="btn quiet" href="mailto:colby@getfixbook.com?subject=Fixbook">Get in touch</a>
-      </div>
-      <p class="fine rise d5"><span>Works on any phone</span><span>Nothing to install</span><span>Data kept in the UK</span></p>
-    </div>
-
-    <div class="ticketstage rise d5">
-      <span class="tag example">Example</span>
-      <article class="ticket" id="ticket" data-step="1" aria-label="An example job: a walk-in fridge is reported, booked with a refrigeration firm for Thursday, then marked done.">
-        <div class="main">
-          <div class="t-head">
-            <span class="t-site">Northern Quarter</span>
-            <span class="t-status" aria-hidden="true">
-              <span class="pill red">Reported</span>
-              <span class="pill amber">Booked, Thu 08:00</span>
-              <span class="pill green">Done</span>
-            </span>
-          </div>
-          <h3 class="t-title">Walk-in fridge not holding temperature</h3>
-          <div class="t-photos" aria-hidden="true"><span></span><span></span><span>+1</span></div>
-          <ol class="t-steps">
-            <li><span class="dot"></span><span><b>Reported by Sam, head chef</b><small>"Reading 9&deg;C at opening." Three photos.</small></span><time>Tue 07:42</time></li>
-            <li><span class="dot"></span><span><b>Booked: Coldline Refrigeration</b><small>Coming Thursday at 08:00</small></span><time>Tue 08:05</time></li>
-            <li><span class="dot"></span><span><b>Done: fan motor replaced</b><small>Engineer's report attached</small></span><time>Thu 10:20</time></li>
-          </ol>
-        </div>
-        <div class="stub" aria-hidden="true">
-          <span class="jobno">JOB 1042</span>
-          <span class="lights"><i></i><i></i><i></i></span>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ three parts -->
-<section class="parts">
-  <div class="wrap">
-    <div class="three">
-      <div class="part reveal">
-        <span class="no">01 &middot; PREVENTATIVE</span>
-        <h2>Every service on its own calendar</h2>
-        <p>Fire alarm, gas, extraction, pest control and the rest, weekly to yearly. Due turns it red, booked amber, done green.</p>
-      </div>
-      <div class="part reveal">
-        <span class="no">02 &middot; REACTIVE</span>
-        <h2>Every job from report to done</h2>
-        <p>Reported from a phone with photos. Booked with who is coming and when. Marked done with the report attached.</p>
-      </div>
-      <div class="part reveal">
-        <span class="no">03 &middot; EVERY SITE</span>
-        <h2>One screen for every site</h2>
-        <p>Red, amber or green for each site, and why. A week before anything is due, the manager and maintenance are emailed.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 </main>
-
 <footer>
-  <div class="wrap">
-    <div class="row">
-      <a class="brand" href="/" aria-label="Fixbook home"><img src="/img/mark.svg" alt="" width="26" height="26">Fixbook</a>
-      <nav class="links" aria-label="Footer">
-        <a href="/security/">Security</a>
-        <a href="/privacy/">Privacy</a>
-        <a href="/terms/">Terms</a>
-        <a href="https://app.getfixbook.com/login">Sign in</a>
-        <a href="mailto:colby@getfixbook.com">colby@getfixbook.com</a>
-      </nav>
-    </div>
-    <p class="legal">Fixbook is a trading name of Staffbook Ltd, registered in England and Wales, company number 17402902. Registered office: 82A James Carter Road, Mildenhall, IP28 7DE. Registered with the Information Commissioner's Office, reference ZC227838.</p>
-  </div>
+  <nav aria-label="Footer"><a href="/security/">Security</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
+  Fixbook is a trading name of Staffbook Ltd, registered in England and Wales, company number 17402902.<br>Registered office: 82A James Carter Road, Mildenhall, IP28 7DE. ICO reference ZC227838.
 </footer>
-
-<script src="/site.js" defer></script>
 </body>
 </html>
